@@ -1,0 +1,11 @@
+@media (min-width: 600px) {
+  #forside {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  #forside img {
+    max-width: 400px;
+    max-height: 500px;
+  }
+}
