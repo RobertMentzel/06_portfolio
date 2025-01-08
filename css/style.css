@@ -6,12 +6,10 @@
 }
 
 img {
-  width: 100%;
+  width: 90%;
   height: auto;
   display: block;
-  margin: 10px;
-  object-fit: cover;
-  object-position: 50% 40%;
+  margin: 15px;
 }
 h1,
 a {
@@ -20,32 +18,43 @@ a {
   font-style: normal;
   font-size: larger;
 }
-main h1 {
+h1 {
   margin-left: 10px;
-  font-size: xx-large;
+  font-size: 10cqw;
 }
 h2 {
   font-family: "Homenaje", serif;
-  font-weight: 400;
+  font-weight: 1000;
   font-style: normal;
   padding: 0;
   margin: 30px 10px 10px 10px;
   max-width: 70ch;
+  font-size: 6cqw;
 }
 a {
   text-decoration: none;
   color: black;
 }
 
+main a {
+  margin-left: 15px;
+}
+
 a:hover {
   color: #ff0000;
 }
 
-p {
+p,
+li {
   font-family: "Play", serif;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
   margin: 10px 10px 10px 10px;
+  font-size: 5cqw;
+}
+p {
+  line-height: 1.5;
+  max-width: 70ch;
 }
 
 body {
@@ -74,6 +83,11 @@ body {
   }
 }
 
+#forside img {
+  object-fit: cover;
+  object-position: 50% 40%;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -87,4 +101,31 @@ header {
 footer {
   padding: 20px;
   background-color: #ffffff;
+}
+
+/*Tema 2*/
+.indhold {
+  border: 1px solid black;
+  margin: 50px;
+}
+
+@media (min-width: 600px) {
+  p,
+  li {
+    font-size: 2cqw;
+  }
+  h2 {
+    font-size: 4cqw;
+  }
+  h1 {
+    font-size: 6cqw;
+  }
+  main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  #forside h2 {
+    font-size: 2cqw;
+    width: 50ch;
+  }
 }
